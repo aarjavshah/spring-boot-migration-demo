@@ -12,7 +12,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.Size;
 
 
 @Entity(name = "employee")
@@ -27,7 +26,6 @@ public class Employee {
     @Id
     private long id;
     @NotNull
-    @Size(min = 1)
     private String name;
     private String city;
 }
